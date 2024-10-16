@@ -12,7 +12,7 @@ function Champion() {
     const fetchChampionData = async () => {
       try {
         const response = await fetch(
-          `https://ddragon.leagueoflegends.com/cdn/14.19.1/data/en_US/champion/${id}.json`
+          `https://ddragon.leagueoflegends.com/cdn/14.19.1/data/es_MX/champion/${id}.json`
         );
 
         // Verificar si la respuesta es correcta
@@ -40,11 +40,33 @@ function Champion() {
     return <div>Cargando...</div>; // Mostrar un mensaje mientras los datos se cargan
   }
 
+  // Extraer la información relevante del campeón
+  const { name, title, lore, tags, info } = championData;
+
   return (
-    <div className="champion-container">
-      <h1>{championData.name}</h1>
-      <p>{championData.title}</p>
-      <p>{championData.lore}</p>
+    <div
+      className="champion-container"
+      style={{ backgroundImage: `url(/splash/${id}_0.jpg)` }} // Establece la imagen de fondo
+    >
+      <div className="overlay"></div> {/* Capa oscura sobre la imagen */}
+      <div className="champion-content">
+        <h1 className="champion-title">{name}</h1>
+        <h2 className="champion-subtitle">{title}</h2>
+        <p className="champion-description">{lore}</p>
+
+        <div className="champion-details">
+          <div className="detail-box">
+            <h4>Rol</h4>
+            <p>{tags.join(', ')}</p> {/* Mostrar roles del campeón */}
+          </div>
+          <div className="detail-box">
+            <h4>Dificultad</h4>
+            <p>{info.difficulty}</p> {/* Mostrar dificultad del campeón */}
+          </div>
+        </div>
+
+        <footer>Maestría de Campeón</footer>
+      </div>
     </div>
   );
 }

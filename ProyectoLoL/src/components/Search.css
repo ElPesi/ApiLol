@@ -1,3 +1,7 @@
+body, html {
+  overflow: hidden; /* Eliminar el scroll */
+}
+
 .search-container {
     background-color: #333;
     height: 100vh; 
@@ -5,13 +9,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    align-items: center;     
+    align-items: center;
+
   }
   
   h1 {
     font-size: 3rem;
     color: #fff;
-    margin: 20px 0; 
+    margin: 20px; 
   }
   
   .search-bar {
@@ -26,11 +31,12 @@
   
   .search-bar:focus {
     outline: none;
-    border-color: #fff;
+    border-color: #fff; 
   }
   
   .logo {
+    position: static; 
     width: 300px; 
-    margin-bottom: 20px; 
+ 
   }
   
