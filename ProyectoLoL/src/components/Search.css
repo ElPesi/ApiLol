@@ -3,40 +3,83 @@ body, html {
 }
 
 .search-container {
-    background-color: #333;
-    height: 100vh; 
-    width: 100vw;  
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
+  background-image: url('../logo/fondo.jpg');
+  width: 100vw; 
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  position: relative;
+  background-size: cover;
 
-  }
-  
-  h1 {
-    font-size: 3rem;
-    color: #fff;
-    margin: 20px; 
-  }
-  
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 20px; 
+}
+
+.search-bar {
+  width: 600px;
+  padding: 20px;
+  font-size: 1.5rem;
+  border: 2px solid #fff;
+  border-radius: 15px; 
+  background-color: #1a1a1a;
+  color: #fff;
+  transition: border-color 0.3s;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: rgb(200, 170, 110); /* Color de enfoque diferente */
+}
+
+.search-button,
+.clear-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.search-button {
+  background-color: rgb(200, 170, 110); /* Color del botón de búsqueda */
+  color: #fff;
+}
+
+.search-button:hover {
+  background-color: rgb(107, 91, 60) /* Color al pasar el ratón */
+}
+
+.clear-button {
+  background-color: #c0392b; /* Color del botón de limpiar */
+  color: #fff;
+}
+
+.clear-button:hover {
+  background-color: #6a251e; /* Color al pasar el ratón */
+}
+
+.logo {
+  width: 300px; 
+}
+
+@media (max-width: 768px) {
   .search-bar {
-    width: 600px;
-    padding: 20px;
-    font-size: 1.5rem;
-    border: 2px solid #fff;
-    border-radius: 15px; 
-    background-color: #1a1a1a;
-    color: #fff;
+    width: 80%; /* Hacer la barra de búsqueda más estrecha en pantallas pequeñas */
   }
-  
-  .search-bar:focus {
-    outline: none;
-    border-color: #fff; 
+
+  h1 {
+    font-size: 2.5rem; /* Ajustar el tamaño del título en pantallas pequeñas */
   }
-  
+
   .logo {
-    position: static; 
-    width: 300px; 
- 
+    width: 200px; /* Ajustar el tamaño del logo en pantallas pequeñas */
   }
-  
+}
