@@ -1,18 +1,24 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';  // Importamos useNavigate
+import { useNavigate } from 'react-router-dom';
 import './Search.css';
 import logo from '../logo/logo_lol.png'; 
 
 function Search() {
-  const [championName, setChampionName] = useState(''); // Estado para almacenar el nombre ingresado
-  const navigate = useNavigate(); // Para redirigir
+  const [championName, setChampionName] = useState('');
+  const navigate = useNavigate();
 
   const handleSearch = (e) => {
     e.preventDefault();
-    if (championName !== '') {
-      // Navegar a la ruta del campeón con el nombre ingresado
-      navigate(`/champion/${championName}`);
+    const trimmedName = championName.trim();
+    if (trimmedName !== '') {
+      navigate(`/champion/${trimmedName}`);
+    } else {
+      alert('Por favor, ingrese un nombre de campeón.');
     }
+  };
+
+  const handleClear = () => {
+    setChampionName('');
   };
 
   return (
@@ -25,8 +31,11 @@ function Search() {
           className="search-bar" 
           placeholder="Buscar..." 
           value={championName} 
-          onChange={(e) => setChampionName(e.target.value)}  // Actualizar el estado
+          onChange={(e) => setChampionName(e.target.value)}
+          aria-label="Buscar campeón"
         />
+        <button type="submit" className="search-button" aria-label="Buscar campeón">Buscar</button>
+        <button type="button" className="clear-button" onClick={handleClear} aria-label="Limpiar búsqueda">Limpiar</button>
       </form>
     </div>
   );
