@@ -1,15 +1,25 @@
+@font-face {
+  font-family: 'FuenteLol';
+  src: url('../assets/BeaufortforLOL-Medium.ttf') format('truetype');
+}
+
+
+
 .champion-container {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 50px;
-background-image: url('../Public/splash/${champion}_0.png');
+  background-image: url('../Public/splash/${champion}_0.png');
   background-size: cover;
   background-position: center;
   color: white;
-  height: 100vh;
   position: relative;
-}
+  width: 100vw; 
+  height: 100vh; 
+  }
+
+
 
 .overlay {
   position: absolute;
@@ -28,18 +38,25 @@ background-image: url('../Public/splash/${champion}_0.png');
 }
 
 .champion-title {
-  font-size: 3.5rem;
+  
+  font-family: "FuenteLol", sans-serif;
+  font-size: 5rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #f1c40f; /* Color dorado */
+  color: #ffffff;
   text-transform: uppercase;
 }
 
 .champion-subtitle {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #ffd700; /* Color dorado más claro */
+  color: rgb(200, 170, 110);
+  text-wrap: balance;
+  word-break: break-word;
+  font-family: "FuenteLol", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 40px;
+  font-style: italic;
+  text-transform: uppercase;
 }
 
 .champion-description {
@@ -58,7 +75,7 @@ background-image: url('../Public/splash/${champion}_0.png');
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid #f1c40f; /* Borde dorado */
+  border: 2px solid rgb(200, 170, 110);
   padding: 15px;
   width: 150px;
   text-align: center;
