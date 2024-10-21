@@ -44,31 +44,32 @@ function Champion() {
   const { name, title, lore, tags, info } = championData;
 
   return (
-    <div
+    <section
       className="champion-container"
-      style={{ backgroundImage: `url(/splash/${id}_0.jpg)` }} // Establece la imagen de fondo
+      style={{ backgroundImage: `url(/splash/${id}_0.jpg)` }} 
     >
       <div className="overlay"></div> {/* Capa oscura sobre la imagen */}
-      <div className="champion-content">
-        <h1 className="champion-title">{name}</h1>
-        <h2 className="champion-subtitle">{title}</h2>
+      
+      <article className="champion-content">
+        <header>
+          <h1 className="champion-title">{name}</h1>
+          <h2 className="champion-subtitle">{title}</h2>
+        </header>
+        
         <p className="champion-description">{lore}</p>
 
         <div className="champion-details">
           <div className="detail-box">
             <h4>Rol</h4>
-            <p>{tags.join(', ')}</p> {/* Mostrar roles del campeón */}
+            <p>{tags.join(', ')}</p> 
           </div>
           <div className="detail-box">
             <h4>Dificultad</h4>
-            <p>{info.difficulty}</p> {/* Mostrar dificultad del campeón */}
+            <p>{info.difficulty}</p> 
           </div>
         </div>
-
-        <footer>Maestría de Campeón</footer>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 }
-
 export default Champion;
