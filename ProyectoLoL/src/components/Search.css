@@ -1,85 +1,85 @@
 body, html {
-  overflow: hidden; /* Eliminar el scroll */
+  overflow: hidden; /* Elimina el scroll en la página */
 }
 
 .search-container {
-  background-image: url('../logo/fondo.jpg');
-  width: 100vw; 
-  height: 100vh; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center;
-  position: relative;
-  background-size: cover;
-
+  background-image: url('../logo/fondo.jpg'); /* Establece la imagen de fondo */
+  width: 100vw; /* Ancho completo de la ventana */
+  height: 100vh; /* Altura completa de la ventana */
+  display: flex; /* Utiliza Flexbox para alinear el contenido */
+  flex-direction: column; /* Organiza el contenido en columnas */
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Centra horizontalmente el contenido */
+  position: relative; /* Posiciona el contenedor relativo a su padre */
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
 }
 
 h1 {
-  font-size: 3rem;
-  color: #fff;
-  margin: 20px; 
+  font-size: 3rem; /* Tamaño de fuente grande para el título */
+  color: #fff; /* Color blanco para el texto */
+  margin: 20px; /* Espacio alrededor del título */
+  -webkit-text-stroke: 1.5px black;/*Borde del texto*/
 }
 
 .search-bar {
-  width: 600px;
-  padding: 20px;
-  font-size: 1.5rem;
-  border: 2px solid #fff;
-  border-radius: 15px; 
-  background-color: #1a1a1a;
-  color: #fff;
-  transition: border-color 0.3s;
+  width: 600px; /* Ancho fijo para la barra de búsqueda */
+  padding: 20px; /* Espaciado interno */
+  font-size: 1.5rem; /* Tamaño de fuente para el texto en la barra */
+  border: 2px solid #fff; /* Borde blanco alrededor de la barra */
+  border-radius: 15px; /* Bordes redondeados */
+  background-color: #1a1a1a; /* Fondo oscuro para la barra */
+  color: #fff; /* Color del texto en blanco */
+  transition: border-color 0.3s; /* Suaviza el cambio de color del borde */
 }
 
 .search-bar:focus {
-  outline: none;
-  border-color: rgb(200, 170, 110); /* Color de enfoque diferente */
+  outline: none; /* Elimina el contorno predeterminado al hacer foco */
+  border-color: rgb(200, 170, 110); /* Cambia el color del borde al enfocar */
 }
 
 .search-button,
 .clear-button {
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  margin: 10px;
-  transition: background-color 0.3s, color 0.3s;
+  padding: 10px 20px; /* Espaciado interno para los botones */
+  font-size: 1.2rem; /* Tamaño de fuente para los botones */
+  border: none; /* Sin borde predeterminado */
+  border-radius: 15px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  margin: 10px; /* Espacio alrededor de los botones */
+  transition: background-color 0.3s, color 0.3s; /* Suaviza el cambio de color de fondo y texto */
 }
 
 .search-button {
   background-color: rgb(200, 170, 110); /* Color del botón de búsqueda */
-  color: #fff;
+  color: #fff; /* Color del texto en blanco */
 }
 
 .search-button:hover {
-  background-color: rgb(107, 91, 60) /* Color al pasar el ratón */
+  background-color: rgb(107, 91, 60); /* Color del botón al pasar el ratón */
 }
 
 .clear-button {
   background-color: #c0392b; /* Color del botón de limpiar */
-  color: #fff;
+  color: #fff; /* Color del texto en blanco */
 }
 
 .clear-button:hover {
-  background-color: #6a251e; /* Color al pasar el ratón */
+  background-color: #6a251e; /* Color del botón al pasar el ratón */
 }
 
 .logo {
-  width: 300px; 
+  width: 300px; /* Ancho del logo */
 }
 
 @media (max-width: 768px) {
   .search-bar {
-    width: 80%; /* Hacer la barra de búsqueda más estrecha en pantallas pequeñas */
+    width: 80%; /* Ancho más estrecho de la barra en pantallas pequeñas */
   }
 
   h1 {
-    font-size: 2.5rem; /* Ajustar el tamaño del título en pantallas pequeñas */
+    font-size: 2.5rem; /* Tamaño de fuente reducido para el título en pantallas pequeñas */
   }
 
   .logo {
-    width: 200px; /* Ajustar el tamaño del logo en pantallas pequeñas */
+    width: 200px; /* Ancho reducido del logo en pantallas pequeñas */
   }
 }

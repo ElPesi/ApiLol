@@ -1,22 +1,22 @@
 html, body {
-  overflow-y: auto;   /* Asegura el desplazamiento vertical cuando sea necesario */
+  overflow-y: auto; /* Asegura el desplazamiento vertical cuando sea necesario */
 }
 
 .champion-page {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto; /* Añadir scroll si es necesario */
+  width: 100%; /* Establece el ancho del contenedor de la página del campeón */
+  display: flex; /* Utiliza Flexbox para alinear el contenido */
+  flex-direction: column; /* Organiza los elementos en una columna */
+  overflow-y: auto; /* Añade scroll si es necesario */
 }
 
 .abilities-section {
-  min-height: 100vh; /* Asegurarse de que las habilidades ocupen al menos una pantalla completa */
-  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para habilidades */
-  color: white;
+  min-height: 100vh; /* Asegura que la sección de habilidades ocupe al menos una pantalla completa */
+  background-color: rgba(0, 0, 0, 0.8); /* Establece un fondo oscuro para la sección de habilidades */
+  color: white; /* Establece el color del texto en blanco */
 }
 
 .abilities-container {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+  display: flex; /* Utiliza Flexbox para organizar los elementos de habilidades */
+  justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+  gap: 15px; /* Añade espacio entre los elementos de habilidades */
 }
