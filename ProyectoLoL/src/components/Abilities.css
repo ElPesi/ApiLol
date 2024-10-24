@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'FuenteLol';
+    src: url('../assets/BeaufortforLOL-Medium.ttf') format('truetype');
+  }
+
+.abilities-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .ability-icon img {
+    width: 64px; /* Tamaño de los iconos */
+    height: 64px;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 8px;
+  }
+  
+  .ability-icon:hover img {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+    transition: transform 0.3s;
+  }
+  
+  .ability-description {
+    font-family: "FuenteLol", sans-serif;    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo para la descripción */
+    padding: 15px;
+    font-size: 40px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+  }
+  
+  .ability-description h4 {
+    margin-bottom: 10px;
+  }
+  
+  .ability-description p {
+    font-size: 30px;
+  }
+  
+  .champion-abilities h3 {
+    text-align: center;
+    font-family: "FuenteLol", sans-serif;
+    font-size: 50px;
+  }

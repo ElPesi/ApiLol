@@ -3,7 +3,7 @@ import Home from './components/Home';
 import Search from './components/Search';
 import Champion from './components/Champion';
 import Footer from './components/Footer';
-import NavBar from './components/NavBar';
+import NavBar from './components/Navbar';
 
 function App() {
   return (

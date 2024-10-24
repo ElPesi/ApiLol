@@ -1,147 +1,22 @@
-@font-face {
-  font-family: 'FuenteLol';
-  src: url('../assets/BeaufortforLOL-Medium.ttf') format('truetype');
+html, body {
+  overflow-y: auto;   /* Asegura el desplazamiento vertical cuando sea necesario */
 }
 
-.champion-container {
-  display: flex;
-  text-align: left;
-  padding: 50px;
-  background-image: url('../Public/splash/${champion}_0.png');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  position: relative;
-  width: 100vw; 
-  height: 100vh; 
-  }
-
-
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+.champion-page {
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Para oscurecer la imagen de fondo */
-  z-index: 1;
-}
-
-.champion-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-}
-
-.champion-title {
-  
-  font-family: "FuenteLol", sans-serif;
-  font-size: 5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.champion-subtitle {
-  color: rgb(200, 170, 110);
-  text-wrap: balance;
-  word-break: break-word;
-  font-family: "FuenteLol", sans-serif;
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 40px;
-  font-style: italic;
-  text-transform: uppercase;
-}
-
-.champion-description {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 40px;
-  color: #f5f5f5; /* Blanco humo */
-}
-
-.champion-details {
-  display: flex;
-  gap: 40px;
-}
-
-.detail-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border: 2px solid rgb(200, 170, 110);
-  padding: 15px;
-  width: 150px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  overflow-y: auto; /* Añadir scroll si es necesario */
 }
 
-.detail-box h4 {
-  margin: 10px 0;
-  font-size: 1.2rem;
-  color: rgb(200, 170, 110); /* Texto dorado */
-}
-
-.detail-box p {
-  margin: 0;
-  font-size: 1rem;
-  color: #f5f5f5;
-}
-
-.champion-abilities {
-  font-family: "FuenteLol", sans-serif;
-  font-size: 3.3rem;
-  margin-top: 20px;
-  padding: 20px;
+.abilities-section {
+  min-height: 100vh; /* Asegurarse de que las habilidades ocupen al menos una pantalla completa */
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para habilidades */
   color: white;
-  border-radius: 8px;
 }
 
-.abilities-icons {
+.abilities-container {
   display: flex;
-  gap: 15px;
   justify-content: center;
-  margin-bottom: 20px;
+  gap: 15px;
 }
-
-.ability-icon img {
-  width: 64px; /* Tamaño de los iconos */
-  height: 64px;
-  cursor: pointer;
-  border: 2px solid white;
-  border-radius: 8px;
-}
-
-.ability-icon:hover img {
-  transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
-  transition: transform 0.3s;
-}
-
-.ability-description {
-  margin-top: 20px;
-  background-color: rgba(0, 0, 0, 0.6); /* Fondo para la descripción */
-  padding: 15px;
-  border-radius: 8px;
-  color: white;
-  text-align: center;
-}
-
-.ability-description h4 {
-  margin-bottom: 10px;
-}
-
-.ability-description p {
-  font-size: 14px;
-}
-
-
-footer {
-  margin-top: 30px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #f5f5f5;
-}
-
