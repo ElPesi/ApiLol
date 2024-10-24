@@ -3,6 +3,11 @@
     src: url('../assets/BeaufortforLOL-Medium.ttf') format('truetype');
   }
 
+.champion-abilities{
+    width: 1920px;
+    align-items: center;
+    color: white;
+}
 .abilities-icons {
     display: flex;
     gap: 15px;
@@ -27,7 +32,6 @@
     background-color: rgba(0, 0, 0, 0.6); /* Fondo para la descripción */
     padding: 15px;
     font-size: 40px;
-    border-radius: 8px;
     color: white;
     text-align: center;
   }
