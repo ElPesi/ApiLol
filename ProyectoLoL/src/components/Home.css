@@ -1,0 +1,29 @@
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+h1, p {
+    margin: 0;
+}
+
+    .start-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(200, 170, 110); 
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: rgb(107, 91, 60);
+}

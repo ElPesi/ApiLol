@@ -1,0 +1,27 @@
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #242424;
+    overflow: hidden;
+}
+
+.intro-image {
+    width: 300px; 
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 2s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+    opacity: 0;
+      transform: translateY(50px); 
+    }
+    100% {
+    opacity: 1;
+      transform: translateY(0); 
+    }
+}
