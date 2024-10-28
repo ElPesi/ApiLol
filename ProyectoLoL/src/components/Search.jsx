@@ -1,40 +1,40 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Search.css';
-import logo from '../logo/logo_lol.png'; // Importa el logo
+import logo from '../logo/logo_lol.png';
 
 function Search() {
-  const [championName, setChampionName] = useState(''); // Estado para almacenar el nombre del campeón
-  const navigate = useNavigate(); // Hook para navegar entre rutas
+  const [championName, setChampionName] = useState('');
+  const navigate = useNavigate();
 
-  // Función para manejar la búsqueda
   const handleSearch = (e) => {
-    e.preventDefault(); // Previene el comportamiento por defecto del formulario
-    const trimmedName = championName.trim(); // Elimina espacios en blanco
-    if (trimmedName !== '') { // Verifica que el nombre no esté vacío
-      navigate(`/champion/${trimmedName}`); // Navega a la ruta del campeón
+    e.preventDefault();
+    let trimmedName = championName.trim();
+
+    if (trimmedName !== '') {
+      trimmedName = trimmedName.charAt(0).toUpperCase() + trimmedName.slice(1).toLowerCase();
+      navigate(`/champion/${trimmedName}`);
     } else {
-      alert('Por favor, ingrese un nombre de campeón.'); // Mensaje de alerta si el campo está vacío
+      alert('Por favor, ingrese un nombre de campeón.');
     }
   };
 
-  // Función para limpiar el campo de búsqueda
   const handleClear = () => {
-    setChampionName(''); // Reinicia el estado a una cadena vacía
+    setChampionName('');
   };
 
   return (
-    <div className="search-container"> {/* Contenedor principal */}
-      <img src={logo} alt="Logo" className="logo" /> {/* Logo */}
+    <div className="search-container">
+      <img src={logo} alt="Logo" className="logo" />
       <h1>Busque un campeón</h1>
-      <form onSubmit={handleSearch}> {/* Formulario de búsqueda */}
+      <form onSubmit={handleSearch}>
         <input 
           type="text" 
           className="search-bar" 
           placeholder="Buscar..." 
-          value={championName} // Vincula el valor del input al estado
-          onChange={(e) => setChampionName(e.target.value)} // Actualiza el estado con el valor ingresado
-          aria-label="Buscar campeón" // Atributo para accesibilidad
+          value={championName} 
+          onChange={(e) => setChampionName(e.target.value)} 
+          aria-label="Buscar campeón" 
         />
         <button type="submit" className="search-button" aria-label="Buscar campeón">Buscar</button> 
         <button type="button" className="clear-button" onClick={handleClear} aria-label="Limpiar búsqueda">Limpiar</button> 
