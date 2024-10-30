@@ -17,7 +17,7 @@ function Skins({ skins, championId }) {
   return (
     <section className="skins-section">
       {/* Título de la sección de skins */}
-      <h3>ASPECTOS </h3>
+      <h3>ASPECTOS DISPONIBLES </h3>
 
       {/* Imagen de la skin seleccionada */}
       {selectedSkin && (

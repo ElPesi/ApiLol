@@ -3,7 +3,7 @@ import './abilities.css';
 
 // Componente para mostrar las habilidades de un campeón
 const Abilities = ({ spells, passive }) => {
-  const [selectedAbility, setSelectedAbility] = useState(null); // Estado para almacenar la habilidad seleccionada
+  const [selectedAbility, setSelectedAbility] = useState(passive); // Estado para almacenar la habilidad seleccionada
 
   // Función para manejar el clic en una habilidad
   const handleAbilityClick = (ability) => {

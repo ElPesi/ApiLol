@@ -1,15 +1,6 @@
 html, body {
-<<<<<<< HEAD
   overflow-y: auto; /* Asegura el desplazamiento vertical cuando sea necesario */
   background-color: #242424;
-}
-
-.champion-container{
-  max-width: 1200px; /* Limita el ancho máximo para pantallas grandes */
-    margin: 0 auto; /* Centra el contenedor */
-}
-=======
-  overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es más alto que la pantalla. */
 }
 
 /* Ajuste del tamaño de cada componente dentro de 'champion-container' */
@@ -74,4 +65,3 @@ html, body {
       font-size: 1.5rem; /* Ajuste del tamaño del subtítulo para móviles */
   }
 }
->>>>>>> b1b1644 (Pagina completamente responsiva, y mejoras n el css)
