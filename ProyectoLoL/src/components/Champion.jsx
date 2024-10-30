@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'; // Importa React y hooks nec
 import { useParams } from 'react-router-dom'; 
 import Presentation from './Presentation'; 
 import Abilities from './Abilities'; 
+import Skins from './Skins';
 import './champion.css'; 
 
 // Componente principal para mostrar información de un campeón
@@ -41,7 +42,7 @@ function Champion() {
   }
 
   // Desestructura los datos del campeón
-  const { name, title, lore, tags, info, spells, passive } = championData;
+  const { name, title, lore, tags, info, spells, passive, skins } = championData;
 
   return (
     <div className="champion-container">
@@ -57,8 +58,12 @@ function Champion() {
 
       {/* Sección de habilidades del campeón */}
       <Abilities spells={spells} passive={passive} />
+
+      {/* Sección de skins del campeón */}
+      <Skins skins={skins} championId={id} />
+
     </div>
   );
 };
 
-export default Champion; // Exporta el componente Champion
+export default Champion;
