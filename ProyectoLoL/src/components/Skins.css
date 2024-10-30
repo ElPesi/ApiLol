@@ -9,6 +9,7 @@
     padding: 50px;
     text-align: center;
     color: white; /* Texto en blanco para resaltar */
+    width: 100vw; /* Usa todo el ancho disponible */
   }
   
   /* Imagen y nombre de la skin seleccionada */

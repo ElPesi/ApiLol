@@ -7,8 +7,8 @@
     position: relative; /* Permite la colocación de elementos hijos en relación a este contenedor */
     background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
     background-position: center; /* Centra la imagen de fondo */
-    width: 1920px; /* Establece el ancho del contenedor */
-    height: 1080px; /* Establece la altura del contenedor */
+    width: 100vw; /* Ocupa el ancho completo de la ventana */
+    height: 100vh; /* Ocupa la altura completa de la ventana */
     display: flex; /* Utiliza Flexbox para alinear contenido */
     align-items: center; /* Centra verticalmente el contenido dentro del contenedor */
     color: white; /* Establece el color del texto en blanco */
