@@ -1,4 +1,5 @@
 html, body {
+<<<<<<< HEAD
   overflow-y: auto; /* Asegura el desplazamiento vertical cuando sea necesario */
   background-color: #242424;
 }
@@ -7,3 +8,70 @@ html, body {
   max-width: 1200px; /* Limita el ancho máximo para pantallas grandes */
     margin: 0 auto; /* Centra el contenedor */
 }
+=======
+  overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es más alto que la pantalla. */
+}
+
+/* Ajuste del tamaño de cada componente dentro de 'champion-container' */
+.champion-container > div {
+  width: 100%; /* Cada componente se ajusta al ancho completo del contenedor principal */
+  box-sizing: border-box; /* Incluye el padding y border en el ancho total para evitar desbordes */
+}
+
+/* Diseño responsivo para pantallas medianas (máximo ancho de 1200px) */
+@media (max-width: 1200px) {
+  .champion-container > div {
+      padding: 10px; /* Agrega un padding menor en pantallas medianas */
+  }
+
+  /* Ajuste de ancho de los componentes principales */
+  .presentation-container,
+  .champion-abilities,
+  .skins-section {
+      max-width: 95vw; /* Limita el ancho al 95% de la ventana para evitar bordes */
+  }
+}
+
+/* Diseño responsivo para pantallas pequeñas (máximo ancho de 768px) */
+@media (max-width: 768px) {
+  .presentation-container,
+  .champion-abilities,
+  .skins-section {
+      max-width: 90vw; /* Reduce el ancho a 90% para un mejor ajuste en pantallas pequeñas */
+  }
+
+  /* Ajuste de tamaño para iconos y miniaturas en pantallas pequeñas */
+  .ability-icon img,
+  .skin-thumbnail {
+      width: 50px; /* Tamaño más pequeño para iconos */
+      height: 50px; /* Altura ajustada en concordancia */
+  }
+
+  .selected-skin img {
+      width: 70%; /* Imagen seleccionada ocupa 70% del contenedor */
+  }
+}
+
+/* Diseño responsivo para dispositivos móviles (máximo ancho de 480px) */
+@media (max-width: 480px) {
+  .presentation-container,
+  .champion-abilities,
+  .skins-section {
+      max-width: 85vw; /* Reduce el ancho aún más en móviles */
+      padding: 5px; /* Padding más pequeño para optimizar el espacio de pantalla */
+  }
+
+  /* Ajustes de tamaño de texto para dispositivos móviles */
+  .ability-description {
+      font-size: 20px; /* Tamaño reducido para mejorar la legibilidad en móviles */
+  }
+
+  .champion-title {
+      font-size: 2rem; /* Ajuste del tamaño del título para móviles */
+  }
+
+  .champion-subtitle {
+      font-size: 1.5rem; /* Ajuste del tamaño del subtítulo para móviles */
+  }
+}
+>>>>>>> b1b1644 (Pagina completamente responsiva, y mejoras n el css)

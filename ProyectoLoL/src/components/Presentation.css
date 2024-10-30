@@ -3,6 +3,11 @@
     src: url('../assets/BeaufortforLOL-Medium.ttf') format('truetype'); /* Especifica la ubicación de la fuente */
 }
 
+@font-face {
+    font-family: 'FuenteLolEpica'; /* Define una fuente personalizada para la aplicación */
+    src: url('../assets/BeaufortforLOL-HeavyItalic.ttf') format('truetype'); /* Especifica la ubicación de la fuente */
+}
+
 .presentation-container {
     position: relative; /* Permite la colocación de elementos hijos en relación a este contenedor */
     background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
@@ -32,16 +37,17 @@
 }
 
 .champion-title {
-    font-family: "FuenteLol", sans-serif; /* Utiliza la fuente personalizada */
-    font-size: 4rem; /* Establece un tamaño de fuente grande para el título */
-    font-weight: bold; /* Aplica un peso de fuente en negrita */
-    margin-bottom: 20px; /* Añade espacio debajo del título */
+    font-family: "FuenteLolEpica", sans-serif;
+    font-size: 4rem; /* Tamaño grande para el título */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    color: white; /* Color blanco para el título */
 }
 
 .champion-subtitle {
-    font-family: "FuenteLol", sans-serif; /* Utiliza la fuente personalizada */
-    font-size: 2rem; /* Establece un tamaño de fuente más pequeño que el título */
-    color: rgb(200, 170, 110); /* Establece un color específico para el subtítulo */
+    font-family: "FuenteLolEpica", sans-serif; /* Fuente personalizada */
+    font-size: 2rem; /* Tamaño menor que el título */
+    color: rgb(200, 170, 110); /* Color dorado específico */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
 }
 
 .champion-description {
@@ -73,3 +79,4 @@
 .detail-box p {
     color: white; /* Establece el color blanco para el texto de los párrafos en las cajas de detalle */
 }
+

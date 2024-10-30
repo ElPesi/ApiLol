@@ -14,7 +14,7 @@ body, html {
   background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
 }
 
-h1 {
+.search-container h1 {
   font-size: 3rem; /* Tamaño de fuente grande para el título */
   color: #fff; /* Color blanco para el texto */
   margin: 20px; /* Espacio alrededor del título */
