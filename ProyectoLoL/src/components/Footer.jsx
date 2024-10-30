@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
   return (
     <footer className="footer">
-      <p>&copy; 2024 Mi Aplicación de Campeones LoL</p>
+      <p>&copy; 2024 Mi Aplicación de Campeones de LoL</p>
     </footer>
   );
 }

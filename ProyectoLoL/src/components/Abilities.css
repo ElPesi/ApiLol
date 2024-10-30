@@ -28,6 +28,8 @@
     transition: transform 0.3s; /* Suaviza la transición del efecto de zoom */
 }
 
+
+/*Arreglar con fede o marcos el problema del texto que sobresale*/
 .ability-description {
     font-family: "FuenteLol", sans-serif; /* Utiliza la fuente personalizada para la descripción */
     margin-top: 20px; /* Espacio arriba de la descripción */
@@ -44,6 +46,7 @@
 
 .ability-description p {
     font-size: 25px; /* Tamaño de fuente para el párrafo de la descripción */
+    
 }
 
 .champion-abilities h3 {
