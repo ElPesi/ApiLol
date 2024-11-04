@@ -1,26 +1,21 @@
-html, body {
-  overflow-y: auto; /* Asegura el desplazamiento vertical cuando sea necesario */
-  background-color: #242424;
+html, body{
+  overflow-y: auto;
 }
 
 /* Ajuste del tamaño de cada componente dentro de 'champion-container' */
 .champion-container > div {
-  width: 100%; /* Cada componente se ajusta al ancho completo del contenedor principal */
-  box-sizing: border-box; /* Incluye el padding y border en el ancho total para evitar desbordes */
+  width: 100%; 
+  box-sizing: border-box;
+  
 }
 
 /* Diseño responsivo para pantallas medianas (máximo ancho de 1200px) */
 @media (max-width: 1200px) {
   .champion-container > div {
-      padding: 10px; /* Agrega un padding menor en pantallas medianas */
+      padding: 10px; 
   }
 
   /* Ajuste de ancho de los componentes principales */
-  .presentation-container,
-  .champion-abilities,
-  .skins-section {
-      max-width: 95vw; /* Limita el ancho al 95% de la ventana para evitar bordes */
-  }
 }
 
 /* Diseño responsivo para pantallas pequeñas (máximo ancho de 768px) */
@@ -28,18 +23,18 @@ html, body {
   .presentation-container,
   .champion-abilities,
   .skins-section {
-      max-width: 90vw; /* Reduce el ancho a 90% para un mejor ajuste en pantallas pequeñas */
+      max-width: 90vw; 
   }
 
   /* Ajuste de tamaño para iconos y miniaturas en pantallas pequeñas */
   .ability-icon img,
   .skin-thumbnail {
-      width: 50px; /* Tamaño más pequeño para iconos */
-      height: 50px; /* Altura ajustada en concordancia */
+      width: 50px; 
+      height: 50px; 
   }
 
   .selected-skin img {
-      width: 70%; /* Imagen seleccionada ocupa 70% del contenedor */
+      width: 70%;
   }
 }
 
@@ -48,20 +43,20 @@ html, body {
   .presentation-container,
   .champion-abilities,
   .skins-section {
-      max-width: 85vw; /* Reduce el ancho aún más en móviles */
-      padding: 5px; /* Padding más pequeño para optimizar el espacio de pantalla */
+      max-width: 85vw; 
+      padding: 5px; 
   }
 
   /* Ajustes de tamaño de texto para dispositivos móviles */
   .ability-description {
-      font-size: 20px; /* Tamaño reducido para mejorar la legibilidad en móviles */
+      font-size: 20px;
   }
 
   .champion-title {
-      font-size: 2rem; /* Ajuste del tamaño del título para móviles */
+      font-size: 2rem; 
   }
 
   .champion-subtitle {
-      font-size: 1.5rem; /* Ajuste del tamaño del subtítulo para móviles */
+      font-size: 1.5rem; 
   }
 }

@@ -5,7 +5,7 @@ body, html {
 .search-container {
   background-image: url('../logo/fondo.jpg'); /* Establece la imagen de fondo */
   width: 100vw; /* Ancho completo de la ventana */
-  height: 100vh; /* Altura completa de la ventana */
+  height: 90vh; /* Altura completa de la ventana */
   display: flex; /* Utiliza Flexbox para alinear el contenido */
   flex-direction: column; /* Organiza el contenido en columnas */
   justify-content: center; /* Centra verticalmente el contenido */

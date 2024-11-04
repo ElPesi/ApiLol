@@ -1,39 +1,39 @@
 @font-face {
-  font-family: 'FuenteLol'; /* Define una fuente personalizada para la aplicación */
-  src: url('../assets/BeaufortforLOL-Medium.ttf') format('truetype'); /* Especifica la ubicación de la fuente */
+  font-family: 'FuenteLol'; 
+  src: url('../assets/BeaufortforLOL-Medium.ttf') format('truetype'); 
 }
 
 @font-face {
-  font-family: 'FuenteLolEpica'; /* Define una fuente personalizada para la aplicación */
-  src: url('../assets/BeaufortforLOL-HeavyItalic.ttf') format('truetype'); /* Especifica la ubicación de la fuente */
+  font-family: 'FuenteLolEpica'; 
+  src: url('../assets/BeaufortforLOL-HeavyItalic.ttf') format('truetype'); 
 }
 
 /* Sección principal de skins */
 .skins-section {
   font-family: "FuenteLol", sans-serif; 
-  background-color: #121212; /* Fondo oscuro para hacer contraste con las imágenes */
+  background-color: #121212; 
   padding: 50px;
   text-align: center;
-  color: white; /* Texto en blanco para resaltar */
+  color: white; 
 }
 .skins-section h3{
   font-family: "FuenteLolEpica", sans-serif; 
   font-size: 32px;
-  letter-spacing: 1px; /* Espaciado entre letras */
+  letter-spacing: 1px;
 
 }
 /* Imagen y nombre de la skin seleccionada */
 .selected-skin img {
-  width: 80%; /* Ancho de la imagen seleccionada */
+  width: 80%; 
   border: 3px solid rgb(200, 170, 110); /* Borde dorado */
-  border-radius: 10px; /* Bordes redondeados */
+  border-radius: 10px; 
   margin-bottom: 10px;
 }
 
 .selected-skin h4 {
   font-family: "FuenteLol", sans-serif; 
-  font-size: 1.5rem; /* Tamaño del nombre de la skin */
-  color: rgb(200, 170, 110); /* Color del texto dorado */
+  font-size: 1.5rem; 
+  color: rgb(200, 170, 110); 
   margin-top: 10px;
 }
 

@@ -1,18 +1,23 @@
 
 .home-container {
+    background-color: #242424;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     text-align: center;
 }
 
 h1, p {
-    margin: 0;
+    margin: 10;
     color: aliceblue;
     
+}
+
+p{
+  font-size: 1.5rem;  
 }
 
     .start-button {

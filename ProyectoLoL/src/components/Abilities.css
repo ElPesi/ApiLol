@@ -1,43 +1,42 @@
 @font-face {
-    font-family: 'FuenteLol'; /* Define una fuente personalizada para la aplicación */
-    src: url('../assets/BeaufortforLOL-Medium.ttf') format('truetype'); /* Especifica la ubicación de la fuente */
+    font-family: 'FuenteLol'; 
+    src: url('../assets/BeaufortforLOL-Medium.ttf') format('truetype'); 
 }
 
-.champion-abilities {
-    width: 1920px; /* Establece el ancho del contenedor de habilidades */
-    align-items: center; /* Alinea los elementos en el centro */
-    color: white; /* Establece el color del texto en blanco */
+.champion-abilities {  
+    align-items: center; 
+    color: white; 
 }
 
 .abilities-icons {
-    display: flex; /* Utiliza Flexbox para organizar los iconos de habilidades */
-    gap: 15px; /* Espacio entre los iconos */
-    justify-content: center; /* Centra los iconos horizontalmente */
+    display: flex; 
+    gap: 15px; 
+    justify-content: center; 
 }
 
 .ability-icon img {
-    width: 64px; /* Establece el tamaño de los iconos */
-    height: 64px; /* Establece la altura de los iconos */
-    cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el icono */
-    border: 2px solid white; /* Añade un borde blanco alrededor del icono */
-    border-radius: 8px; /* Redondea los bordes del icono */
+    width: 64px; 
+    height: 64px; 
+    cursor: pointer; 
+    border: 2px solid white; 
+    border-radius: 8px;
 }
 
 .ability-icon:hover img {
+    border-color: rgb(200, 170, 110); /* Cambia el color del borde a dorado al hacer hover */
     transform: scale(1.1); /* Efecto de zoom al pasar el mouse sobre el icono */
     transition: transform 0.3s; /* Suaviza la transición del efecto de zoom */
 }
+    
 
-
-/*Arreglar con fede o marcos el problema del texto que sobresale*/
 .ability-description {
-    font-family: "FuenteLol", sans-serif; /* Utiliza la fuente personalizada para la descripción */
-    margin-top: 20px; /* Espacio arriba de la descripción */
+    font-family: "FuenteLol", sans-serif; 
+    margin-top: 20px; 
     background-color: rgba(0, 0, 0, 0.6); /* Establece un fondo semitransparente para la descripción */
     padding: 15px; /* Espaciado interno en la descripción */
-    font-size: 40px; /* Tamaño de fuente grande para el texto de la descripción */
-    color: white; /* Establece el color del texto en blanco */
-    text-align: center; /* Centra el texto dentro de la descripción */
+    font-size: 40px; 
+    color: white;
+    text-align: center; 
 }
 
 .ability-description h4 {
@@ -45,12 +44,12 @@
 }
 
 .ability-description p {
-    font-size: 25px; /* Tamaño de fuente para el párrafo de la descripción */
+    font-size: 25px; 
     
 }
 
 .champion-abilities h3 {
-    text-align: center; /* Centra el título de habilidades */
-    font-family: "FuenteLol", sans-serif; /* Utiliza la fuente personalizada */
-    font-size: 50px; /* Tamaño de fuente grande para el título */
+    text-align: center; 
+    font-family: "FuenteLol", sans-serif; 
+    font-size: 50px; 
 }
