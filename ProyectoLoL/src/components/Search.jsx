@@ -10,9 +10,48 @@ function Search() {
   const handleSearch = (e) => {
     e.preventDefault();
     let trimmedName = championName.trim();
-
+  
     if (trimmedName !== '') {
+
       trimmedName = trimmedName.charAt(0).toUpperCase() + trimmedName.slice(1).toLowerCase();
+  
+      if (trimmedName === "Missfortune") {
+        trimmedName = "MissFortune";
+      }
+
+      if (trimmedName === "Aurelionsol") {
+        trimmedName = "AurelionSol";
+      }
+
+      if (trimmedName === "Drmundo") {
+        trimmedName = "DrMundo";
+      }
+
+      if (trimmedName === "Jarvaniv") {
+        trimmedName = "JarvanIV";
+      }
+
+      if (trimmedName === "Maestro yi") {
+        trimmedName = "MasterYi";
+      }
+
+      if (trimmedName === "Ksante") {
+        trimmedName = "KSante";
+      }
+
+      if (trimmedName === "Bardo") {
+        trimmedName = "Bard";
+      }
+
+      if (trimmedName === "Xin zhao") {
+        trimmedName = "XinZhao";
+
+      if (trimmedName === "Twistedfate") {
+        trimmedName = "TwistedFate";
+      }
+
+      }
+  
       navigate(`/champion/${trimmedName}`);
     } else {
       alert('Por favor, ingrese un nombre de campeón.');
